@@ -24,11 +24,31 @@ DMNLY = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 # Day's in Month's of Leap Year
 DMLY = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
+MONTHS = {
+    "january": 1,
+    "february": 2,
+    "march": 3,
+    "april": 4,
+    "may": 5,
+    "june": 6,
+    "july": 7,
+    "august": 8,
+    "september": 9,
+    "october": 10,
+    "november": 11,
+    "december": 12
+}
+
 # Ask input and raise error if int coversion fails
+print("Enter your date refering to the below given example format.")
+print("1st January 2020")
+DATE = input("> ")
+
 try:
-    DAY = int(input("Enter day (int) of your date > "))
-    MONTH = int(input("Enter month (int) of your date > "))
-    YEAR = int(input("Enter year (int) of your date > "))
+    DATE = DATE.split(" ")
+    DAY = int(DATE[0][:-2])
+    MONTH = int(MONTHS[DATE[1].lower()])
+    YEAR = int(DATE[2])
 except Exception as e:
     print(e)
     sys.exit("Program Aborted!")
