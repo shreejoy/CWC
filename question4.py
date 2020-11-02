@@ -41,7 +41,7 @@ if DAY > 31 or MONTH > 12:
 
 # Calculation for number of days
 NDAYS += DAY
-for i in range(0, MONTH):
+for i in range(0, MONTH - 1):
     NDAYS += DMY[i]
 
 # Print result
