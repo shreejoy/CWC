@@ -8,6 +8,7 @@ def is_prime(num):
 count = 0
 num = 2
 
+print("Getting you the 10001 th prime number. It may take upto 1min, Please be paitent.")
 while count < 10001:
     count += 1 if is_prime(num) else 0
     num += 1
