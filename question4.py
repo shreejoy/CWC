@@ -1,6 +1,7 @@
 import sys
 
 
+# test for leap year and return value accordingly
 def test_leap_year(year):
     if (year % 4) == 0:
         if (year % 100) == 0:
