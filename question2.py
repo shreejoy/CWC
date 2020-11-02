@@ -1,16 +1,20 @@
 import random
 
+# reserved values for user
 USER_INPUT = ""
 USER_POINTS = 0
 
+# reserved values for computer
 COMPUTER_INPUT = ""
 COMPUTER_POINTS = 0
 
+# other reserved values
 STOP_GAME = False
 MAX_ROUNDS = 3
 COMPLETED_ROUNDS = 0
 ACCEPTED_INPUTS = ['R', 'P', 'S']
 
+# loop till the number of rounds is 3 or user decides to quite
 while not STOP_GAME and COMPLETED_ROUNDS < MAX_ROUNDS:
     print("\nStarting Round!")
     # Ask user's initial input
@@ -26,6 +30,7 @@ while not STOP_GAME and COMPLETED_ROUNDS < MAX_ROUNDS:
         print(
             f"Input success! \n\nUser's input is \n{USER_INPUT}\n\nComputer's input is \n{COMPUTER_INPUT}\n")
 
+        # validate and update points
         if USER_INPUT == 'R' and COMPUTER_INPUT == 'P':
             COMPUTER_POINTS += 1
             print("Computer won this round.")
@@ -49,10 +54,12 @@ while not STOP_GAME and COMPLETED_ROUNDS < MAX_ROUNDS:
             COMPUTER_POINTS += 1
             print("Tie round!")
 
+        # update rounds count and ask if users want to play more
         COMPLETED_ROUNDS += 1
         if COMPLETED_ROUNDS < 3:
             STOP_GAME = False if input("Would you play another game? Enter 'y' or 'n': ") == 'y' else True
 
+# display the game result
 print(f"\n{COMPLETED_ROUNDS} round(s) completed. Computer points are {COMPUTER_POINTS} and user points are {USER_POINTS}")
 if COMPUTER_POINTS == USER_POINTS:
     print("Game tied!")
