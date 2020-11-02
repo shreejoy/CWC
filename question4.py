@@ -50,8 +50,7 @@ try:
     MONTH = int(MONTHS[DATE[1].lower()])
     YEAR = int(DATE[2])
 except Exception as e:
-    print(e)
-    sys.exit("Program Aborted!")
+    sys.exit(f"Program Aborted: {e}")
 
 # Test leap year and assign the days list
 DMY = DMLY if test_leap_year(YEAR) else DMNLY
