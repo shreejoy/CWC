@@ -16,3 +16,5 @@ total = (run_time - d_open) * (40 + eff) + d_open * (30 + eff)
 if total <= 0:
     raise Exception(
         "Under the given sitution the purifier will not work at all")
+else:
+    print(f"The total amount purfied is {total}")
