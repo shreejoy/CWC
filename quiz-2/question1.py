@@ -13,3 +13,7 @@ except:
 
 if isinstance(string, int):
     return 'Invalid input'
+
+string = ''.join([i for i in string if i.upper() not in VOWELS])
+
+print(string)
