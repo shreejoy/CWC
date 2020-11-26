@@ -27,11 +27,11 @@ jobs:
               [[ "$old_hash" != "$new_hash" ]] && echo "Formatted: $script"
           done <<< "${scripts}"
           echo "linter job completed"
+          git add .
           changed=$(git diff --numstat --cached | wc -l)
           if [[ "$changed" -eq 0 ]]; then
               echo "Nothing to push"
               exit 0
           fi
-          git add .
           git commit -m "Format py files"
           git push
