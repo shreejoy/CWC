@@ -12,8 +12,12 @@ except:
     pass
 
 if isinstance(string, int):
-    return 'Invalid input'
+    raise Exception('Invalid input')
 
-string = ''.join([i for i in string if i.upper() not in VOWELS])
+nstring = ''.join([i for i in string if i.upper() not in VOWELS])
 
-print(string)
+if nstring == string:
+    raise Exception('The string consists of no vowels.')
+else:
+    print(nstring)
+
