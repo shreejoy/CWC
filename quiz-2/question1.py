@@ -20,4 +20,3 @@ if nstring == string:
     raise Exception('The string consists of no vowels.')
 else:
     print(nstring)
-
