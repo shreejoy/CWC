@@ -57,7 +57,8 @@ while not STOP_GAME and COMPLETED_ROUNDS < MAX_ROUNDS:
         # update rounds count and ask if users want to play more
         COMPLETED_ROUNDS += 1
         if COMPLETED_ROUNDS < 3:
-            STOP_GAME = False if input("Would you play another game? Enter 'y' or 'n': ") == 'y' else True
+            STOP_GAME = False if input(
+                "Would you play another game? Enter 'y' or 'n': ") == 'y' else True
 
 # display the game result
 print(f"\n{COMPLETED_ROUNDS} round(s) completed. Computer points are {COMPUTER_POINTS} and user points are {USER_POINTS}")

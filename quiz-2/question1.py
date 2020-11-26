@@ -2,14 +2,14 @@ VOWELS = ['A', 'E', 'I', 'O', 'U']
 string = input("Enter your string >")
 
 try:
-  string = float(string)
+    string = float(string)
 except:
-  pass
+    pass
 
 try:
-  string = int(string)
+    string = int(string)
 except:
-  pass
+    pass
 
 if isinstance(string, int):
-  return 'Invalid input'
+    return 'Invalid input'

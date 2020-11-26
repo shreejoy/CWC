@@ -4,6 +4,8 @@ num2 = 0
 final = 0
 
 # get the reverse of number
+
+
 def reverse(num):
     rev = 0
     while (num >= 1):
@@ -11,6 +13,7 @@ def reverse(num):
         rev = (10 * rev) + n
         num = num // 10
     return rev
+
 
 # loop i and j to find the solution
 for i in range(100, 1000):

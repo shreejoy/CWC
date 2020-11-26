@@ -10,6 +10,7 @@ def is_prime(num):
             return False
     return True
 
+
 # iterate till we get the solution
 print("Getting you the 10001 th prime number. It may take upto 1min, Please be paitent.")
 while count < 10002:
