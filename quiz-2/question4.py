@@ -2,7 +2,7 @@ N = int(input("Enter size of matrix > "))
 MATRIX = mat = [[0 for i in range(N)] for i in range(N)]
 
 for i in range(N):
-  MATRIX[i][i] = 1
+    MATRIX[i][i] = 1
 
 for i in range(N):
     MATRIX[i][N - i - 1] = 1
@@ -13,5 +13,5 @@ if (N % 2 != 0):
 
 for i in range(N):
     for j in range(N):
-        print(MATRIX[i][j], end = " ")
+        print(MATRIX[i][j], end=" ")
     print("")
