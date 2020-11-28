@@ -21,10 +21,11 @@ The door can be opened once a minute so its not possible to have the amount of r
 numerically less than the number of times the door was opened.
 """
 if NDO > RT:
-    raise sys.exit("Not a possible scenario. Please try again with correct inputs")
+    raise sys.exit(
+        "Not a possible scenario. Please try again with correct inputs")
 
 
-# Calculate the effect on efficency on purifier due to the the 
+# Calculate the effect on efficency on purifier due to the the
 EFF = int((TMP - 25) * 2)
 # Calculate the required value
 total = (RT - NDO) * (40 + EFF) + NDO * (30 + EFF)
