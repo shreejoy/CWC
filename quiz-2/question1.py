@@ -1,18 +1,14 @@
+import sys
+
+# List of vowels
 VOWELS = ['A', 'E', 'I', 'O', 'U']
+# Get the input
 string = input("Enter your string >")
 
-try:
-    string = float(string)
-except:
-    pass
-
-try:
-    string = int(string)
-except:
-    pass
-
-if isinstance(string, int):
-    raise Exception('Invalid input')
+# If any character of the given input is not a alphabet the exit
+check = [C.isalpha() for C in list(string)]
+if False in check:
+    sys.exit('Invalid input')
 
 nstring = ''.join([i for i in string if i.upper() not in VOWELS])
 
