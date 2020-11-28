@@ -10,7 +10,8 @@ check = [C.isalpha() for C in list(string)]
 if False in check:
     sys.exit('Invalid input')
 
-nstring = ''.join([i for i in string if i.upper() not in VOWELS])
+# Now exclude all the vowels and build new string
+nstring = ''.join([i for i in list(string) if i.upper() not in VOWELS])
 
 if nstring == string:
     raise Exception('The string consists of no vowels.')
