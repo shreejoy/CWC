@@ -10,7 +10,7 @@ N = int(input("N > "))
 for i in range(N):
     if (X - A + Y - B) > N:
         break
-        
+
     if X <= A and Y <= B:
         print('e2')
         break
