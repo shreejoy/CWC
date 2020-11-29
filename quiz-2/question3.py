@@ -17,9 +17,11 @@ for i in range(N):
     if X > A:
         print('e3')
         X -= 1
+        print('X n A', X, A)
 
-    if Y > Y:
+    if Y > B:
         print('e4')
         Y -= 1
+        print('Y n B', Y, B)
 
 print(X - Y, 'answer')
