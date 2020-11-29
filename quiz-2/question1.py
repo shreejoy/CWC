@@ -13,6 +13,7 @@ if False in check:
 # Now exclude all the vowels and build new string
 nstring = ''.join([i for i in list(string) if i.upper() not in VOWELS])
 
+# If old and new string are same it means nothing was changed
 if nstring == string:
     raise Exception('The string consists of no vowels.')
 else:
