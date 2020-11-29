@@ -9,7 +9,7 @@ N = int(input("N > "))
 
 
 for COUNTER != N:
-    if (X - A + Y - B) > N:
+    if (X - A + Y - B) < N:
         break
 
     if X <= A and Y <= B:
