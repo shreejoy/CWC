@@ -6,10 +6,11 @@ A = int(input("A > "))
 B = int(input("B > "))
 N = int(input("N > "))
 
-if (X - A + Y - B) < N:
-    sys.exit('e1')
 
 for i in range(N):
+    if (X - A + Y - B) > N:
+        break
+        
     if X <= A and Y <= B:
         print('e2')
         break
