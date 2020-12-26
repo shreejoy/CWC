@@ -69,3 +69,27 @@ http://www.math.odu.edu/~bogacki/cgi-bin/lat.cgi?c=bas
 
 In case of any inconveniences all links are here :
 http://www.math.odu.edu/~bogacki/cgi-bin/lat.cgi
+
+
+
+https://atozmath.com/MatrixEv.aspx?q=trimat -Upper Traingular converter
+https://matrix.reshish.com/multiplication.php
+-Matrix multiplication calculator
+https://matrix.reshish.com/inverse.php
+-inverse matrix
+https://matrix.reshish.com/rank.php
+-matrix rank calculator
+https://atozmath.com/MatrixEv.aspx?q=ludecomp
+-Lu Decomposition
+https://www.mathdetail.com/col.php
+-column space calculatot
+https://www.emathhelp.net/calculators/linear-algebra/null-space-calculator/
+-matrix null space calculatlr
+https://www.mathdetail.com/row.php
+-Row Space calculatlr
+https://matrix.reshish.com/
+-matrix calculatlr
+https://www.omnicalculator.com/math/linear-independence
+-linear independent
+https://mathforyou.net/en/online/vectors/basis/
+-vector basis
