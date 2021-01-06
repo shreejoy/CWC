@@ -18,7 +18,7 @@ num = int(input("Enter your desired number > "))
 i = 0
 roman_val = ''
 
-while  num > 0:
+while num > 0:
     for _ in range(num // val[i]):
         roman_val += syb[i]
         num -= val[i]
