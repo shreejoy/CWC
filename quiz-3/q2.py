@@ -4,6 +4,7 @@ str2 = input("Enter the second string > ")
 str2 = sorted(set(str2))
 
 for s in str2:
-    str1.replace(s, '')
+    str1 = str1.replace(s.lower(), '')
+    str1 = str1.replace(s.upper(), '')
 
-print(s)
+print(str1)
