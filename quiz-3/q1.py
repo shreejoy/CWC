@@ -20,10 +20,10 @@ csum = input("Enter your desired sum > ")
 if csum > sum(arr):
     sys.exit("No triplet in the given array can satisfy the given sum.")
 
-triplets = [[i, j, k] 
-            for i in range(0, arr_len - 2) 
-            for j in range(i + 1, arr_len - 1) 
-            for k in range(j + 1, arr_len) 
+triplets = [[i, j, k]
+            for i in range(0, arr_len - 2)
+            for j in range(i + 1, arr_len - 1)
+            for k in range(j + 1, arr_len)
             if i + j + k == csum]
 
 if not triplets:
