@@ -1,6 +1,7 @@
 rc = int(input("Enter the number of rows > "))
 max_num = rc // 2 + 1
 
+
 def get_pattern(n, s):
     pattern = ' ' * s
 
@@ -10,6 +11,7 @@ def get_pattern(n, s):
 
     pattern = pattern + '1' + pattern[::-1]
     return pattern
+
 
 p = []
 for j in range(max_num):
