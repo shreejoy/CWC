@@ -9,6 +9,8 @@ if num % 2 == 0:
 r = num // 2 + 1
 
 # function to generate pattern
+
+
 def genp(n, s):
     p = ' ' * s
 
@@ -28,7 +30,7 @@ for i in range(r):
     spaces = (num - r - i)
     pattern.append(genp(i + 1, spaces))
 
-# join the pattern with 1 and its reverse respectively 
+# join the pattern with 1 and its reverse respectively
 pattern += pattern[:-1][::-1]
 
 # print the pattern
