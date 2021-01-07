@@ -13,13 +13,13 @@ ROMAN_NUM = {
     1: 'I'
 }
 
+roman_val = ''
 num = int(input("Enter your desired number > "))
 
-i = 0
-roman_val = ''
 
-while num > 0:
-    for _ in range(num // val[i]):
-        roman_val += syb[i]
-        num -= val[i]
-    i += 1
+for roman in ROMAN_NUM.keys():
+    while num >= roman:
+        roman_val += ROMAN_NUM[roman]
+        num -= roman
+
+print(roman_val)
