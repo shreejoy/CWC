@@ -1,24 +1,22 @@
-rc = int(input("Enter the number of rows > "))
-max_num = rc // 2 + 1
+num = int(input("Enter the number (odd) > "))
+r = num // 2 + 1
 
-
-def get_pattern(n, s):
-    pattern = ' ' * s
+def genp(n, s):
+    p = ' ' * s
 
     while n > 1:
-        pattern += str(n)
+        p += str(n)
         n -= 1
 
-    pattern = pattern + '1' + pattern[::-1]
-    return pattern
+    p = p + '1' + p[::-1]
+    return p
 
+pattern = []
+for i in range(r):
+    spaces = (num - r - i)
+    pattern.append(genp(i + 1, spaces))
 
-p = []
-for j in range(max_num):
-    spaces = (rc - max_num - j)
-    p.append(get_pattern(j + 1, spaces))
+pattern += pattern[:-1][::-1]
 
-p = p + p[0:(max_num - 1)][::-1]
-
-for q in p:
-    print(q)
+for p in pattern:
+    print(p)
