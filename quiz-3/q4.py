@@ -1,6 +1,7 @@
 num = int(input("Enter the number (odd) > "))
 r = num // 2 + 1
 
+
 def genp(n, s):
     p = ' ' * s
 
@@ -10,6 +11,7 @@ def genp(n, s):
 
     p = p + '1' + p[::-1]
     return p
+
 
 pattern = []
 for i in range(r):
