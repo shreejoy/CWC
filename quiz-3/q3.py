@@ -17,7 +17,7 @@ ROMAN_NUM = {
 # placeholder
 roman_val = ''
 # input of desired number
-num = int(input("Enter your desired number > "))
+bak = num = int(input("Enter your desired number > "))
 # the format of roman numerals changes from 4000, so keep the range till 3999
 if num < 1 or num > 3999:
     sys.exit('Cannot find the roman numeral for the given input.')
@@ -27,4 +27,4 @@ for roman in ROMAN_NUM.keys():
         roman_val += ROMAN_NUM[roman]
         num -= roman
 # print the final result
-print(f"The roman numeral for {num} is {roman_val}")
+print(f"The roman numeral for {bak} is {roman_val}")
