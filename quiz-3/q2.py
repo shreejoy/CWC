@@ -1,4 +1,4 @@
-# take input of the first string 
+# take input of the first string
 str1 = input("Enter the first string > ")
 # take input of the second string
 str2 = input("Enter the second string > ")
