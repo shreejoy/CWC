@@ -16,10 +16,12 @@ ROMAN_NUM = {
 roman_val = ''
 num = int(input("Enter your desired number > "))
 
+if num < 1 or num > 3999:
+    sys.exit('Cannot find the roman numeral for the given input.')
 
 for roman in ROMAN_NUM.keys():
     while num >= roman:
         roman_val += ROMAN_NUM[roman]
         num -= roman
 
-print(roman_val)
+print(f"The roman numeral for {num} is {roman_val}")
